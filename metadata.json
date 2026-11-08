@@ -1,6 +1,8 @@
 {
-  "name": "Dino Journal — 3D Paleontology Cover-Flow",
+  "name": "Dinosaur Wiki — 3D Paleontology Cover-Flow",
   "description": "An interactive 3D cover-flow dinosaur field journal with parallax hero cards, geological timelines, size comparisons, and curator notes.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
