@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "./styles/theme.css";
+
+@layer base {
+  body {
+    font-family: var(--font-display);
+    background: radial-gradient(circle at 50% 42%, var(--bg-journal-end) 0%, var(--bg-journal-start) 58%, var(--bg-journal-deep) 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+.perspective-carousel {
+  perspective: 1400px;
+  perspective-origin: 50% 45%;
+  transform-style: preserve-3d;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.card-inner-highlight {
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.25),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+    0 24px 48px -12px rgba(10, 14, 29, 0.65),
+    0 8px 20px -6px rgba(10, 14, 29, 0.45);
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.glass-pill {
+  background: rgba(15, 19, 38, 0.48);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+/* Subtle SVG noise background overlay */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+  --bg-journal-start: #2E3558;
+  --bg-journal-end: #3B4470;
+  --bg-journal-deep: #1E233D;
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-bg-hover: rgba(255, 255, 255, 0.14);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-highlight: rgba(255, 255, 255, 0.22);
+  --card-radius: 16px;
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
